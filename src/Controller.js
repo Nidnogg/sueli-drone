@@ -6,10 +6,9 @@ const AudioContext = window.AudioContext || window.webkitAudioContext;
 let audioContext;
 let currentTrack = 0;
 const audioUrls = [
-  "https://firebasestorage.googleapis.com/v0/b/cloudtop-nidnogg.appspot.com/o/audio%2Ftest.mp3?alt=media&token=c0ca5d7b-abcf-43c7-87af-764393e539af",
-  "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/the_zen_bass.mp3?alt=media&token=8b231fcd-0b79-4dbd-ba35-0bb3d509be2f",
-  "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/serene_mind_waves.mp3?alt=media&token=dd379833-fe01-44da-a405-942cba30b3e2",
-  "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/pulsewaves.mp3?alt=media&token=8c300cfc-8d24-4895-8586-3159830a4232",
+  "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/Stevie%20Wonder%20-%20Another%20Star.mp3?alt=media&token=0a75509b-1966-43fe-8f59-9c7f5e4409ec",
+  "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/happy_birthday_su.mp3?alt=media&token=c1f1cc94-0418-48a6-942b-22a6bc8c4d93",
+  "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/the_zen_bass.mp3?alt=media&token=8b231fcd-0b79-4dbd-ba35-0bb3d509be2f"
 ];
 
 const audioStop = () => {

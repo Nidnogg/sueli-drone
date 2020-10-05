@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 import Drone from './Drone.js';
 import Clock from './Clock.js';
 import Controller from './Controller.js';
-import Hentai from './Hentai.js'
+import Hentai from './Hentai.js';
+import Bg from './img/bg.png';
 import './css/App.css';
 
 
@@ -62,26 +63,27 @@ const App = () => {
   return (
     <section className="main-section">
       <Hentai isMenuOpen={isMenuOpenCallback} setMenuOpen={setMenuOpenCallback} />
+      <img className="background-img" src={Bg} alt="background"></img>
       <section ref={menu} className="main-menu-section">
         <div ref={menuHeaderDiv} className="main-menu-header">
-            <span ref={menuHeader} className="menu-header">mood drone</span> <span className="ver-num" ref={verNum}>v1.0</span>     
+            <span ref={menuHeader} className="menu-header">sueli drone</span> <span className="ver-num" ref={verNum}>v1.0</span>     
         </div>
         
         <div ref={menuContentDiv} className="main-menu-content">
           <p>
-            Hi! If you like this, feel free to help me out with a cup of <a href="https://ko-fi.com/nidnogg">Ko-Fi</a> at 
-            my <a href="https://www.patreon.com/nidnogg">Patreon.</a> &#x2615; <br/>
-            This is a radio web app built with quality sleep and headspace in mind. 
-            It aims to bring you moody tunes and to boost your spirits in times of need. 
-            It's also intended as a visual experiment. We've all faced sleepless nights among  
-            ever more agonizing deadlines. I hope you can find some peace of mind here.<br/> <br/>
-
-            All the songs are produced by me. Check out my <a href="https://soundcloud.com/nidnogg">soundcloud!</a> <br/>
-            Inspired by Docubyte's phenomenal <a href="https://www.docubyte.com/works/guide-to-computing/">Guide to Computing.</a> Cheers!
+            Olá Sueli! Seja bem-vinda ao seu rádio pessoal na internet. 
+            
+            <br/> <br/>
+            Aqui está um <a href="https://photos.app.goo.gl/Vcp9VM7kGLPgwEDE7">álbum</a> com suas fotos.
+            Muito obrigado por todo o seu carinho e hospitalidade nos nossos 3 anos que nos conhecemos. Você é uma pessoa incrível! <br />
+            Admiro muito seu amor pelo seu trabalho. <br />
+            A última música é de minha autoria. Veja mais no meu <a href="https://soundcloud.com/nidnogg">soundcloud!</a> <br/>
+            Inspirado pela exposição fenomenal do Docubyte, <a href="https://www.docubyte.com/works/guide-to-computing/">Guide to Computing.</a> <br />
+            Feliz Aniversário!
           </p>
         </div>
       </section>
-      
+
       <div ref={blur} className="drone-wrapper">
         <Drone className="drone" isActive={isActiveCallback} />
           <div className="visor-panel-wrapper">
