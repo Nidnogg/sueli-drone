@@ -1,6 +1,6 @@
-# mood drone
+# sueli drone
 
-Mood Drone is a tiny web app mimicking a radio widget.
+Sueli Drone is a tiny web app mimicking a radio widget.
 
 It supports user defined alarms and it's mostly intended to play moody songs that would lull the user to a healthy night's sleep.
 
