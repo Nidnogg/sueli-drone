@@ -35429,7 +35429,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext;
 var currentTrack = 0;
-var audioUrls = ["https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/the_zen_bass.mp3?alt=media&token=8b231fcd-0b79-4dbd-ba35-0bb3d509be2f", "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/serene_mind_waves.mp3?alt=media&token=dd379833-fe01-44da-a405-942cba30b3e2", "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/pulsewaves.mp3?alt=media&token=8c300cfc-8d24-4895-8586-3159830a4232"];
+var audioUrls = ["https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/Stevie%20Wonder%20-%20Another%20Star.mp3?alt=media&token=0a75509b-1966-43fe-8f59-9c7f5e4409ec", "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/happy_birthday_su.mp3?alt=media&token=c1f1cc94-0418-48a6-942b-22a6bc8c4d93", "https://firebasestorage.googleapis.com/v0/b/cloudtop-8de79.appspot.com/o/the_zen_bass.mp3?alt=media&token=8b231fcd-0b79-4dbd-ba35-0bb3d509be2f"];
 
 var audioStop = function audioStop() {
   // gets audio element
@@ -35755,7 +35755,9 @@ var Hentai = function Hentai(props) {
 
 var _default = Hentai;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","gsap":"../node_modules/gsap/index.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","gsap":"../node_modules/gsap/index.js"}],"../src/img/bg.png":[function(require,module,exports) {
+module.exports = "/bg.af052c7e.png";
+},{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -35846,6 +35848,8 @@ var _Clock = _interopRequireDefault(require("./Clock.js"));
 var _Controller = _interopRequireDefault(require("./Controller.js"));
 
 var _Hentai = _interopRequireDefault(require("./Hentai.js"));
+
+var _bg = _interopRequireDefault(require("./img/bg.png"));
 
 require("./css/App.css");
 
@@ -35943,6 +35947,10 @@ var App = function App() {
   }, _react.default.createElement(_Hentai.default, {
     isMenuOpen: isMenuOpenCallback,
     setMenuOpen: setMenuOpenCallback
+  }), _react.default.createElement("img", {
+    className: "background-img",
+    src: _bg.default,
+    alt: "background"
   }), _react.default.createElement("section", {
     ref: menu,
     className: "main-menu-section"
@@ -35952,21 +35960,19 @@ var App = function App() {
   }, _react.default.createElement("span", {
     ref: menuHeader,
     className: "menu-header"
-  }, "mood drone"), " ", _react.default.createElement("span", {
+  }, "sueli drone"), " ", _react.default.createElement("span", {
     className: "ver-num",
     ref: verNum
   }, "v1.0")), _react.default.createElement("div", {
     ref: menuContentDiv,
     className: "main-menu-content"
-  }, _react.default.createElement("p", null, "Hi! If you like this, feel free to help me out with a cup of ", _react.default.createElement("a", {
-    href: "https://ko-fi.com/nidnogg"
-  }, "Ko-Fi"), " at my ", _react.default.createElement("a", {
-    href: "https://www.patreon.com/nidnogg"
-  }, "Patreon."), " \u2615 ", _react.default.createElement("br", null), "This is a radio web app built with quality sleep and headspace in mind. It aims to bring you moody tunes and to boost your spirits in times of need. It's also intended as a visual experiment. We've all faced sleepless nights among ever more agonizing deadlines. I hope you can find some peace of mind here.", _react.default.createElement("br", null), " ", _react.default.createElement("br", null), "All the songs are produced by me. Check out my ", _react.default.createElement("a", {
+  }, _react.default.createElement("p", null, "Ol\xE1 Sueli! Seja bem-vinda ao seu r\xE1dio pessoal na internet.", _react.default.createElement("br", null), " ", _react.default.createElement("br", null), "Aqui est\xE1 um ", _react.default.createElement("a", {
+    href: "https://photos.app.goo.gl/Vcp9VM7kGLPgwEDE7"
+  }, "\xE1lbum"), " com suas fotos. Muito obrigado por todo o seu carinho e hospitalidade nos nossos 3 anos que nos conhecemos. Voc\xEA \xE9 uma pessoa incr\xEDvel! ", _react.default.createElement("br", null), "Admiro muito seu amor pelo seu trabalho. ", _react.default.createElement("br", null), "A \xFAltima m\xFAsica \xE9 de minha autoria. Veja mais no meu ", _react.default.createElement("a", {
     href: "https://soundcloud.com/nidnogg"
-  }, "soundcloud!"), " ", _react.default.createElement("br", null), "Inspired by Docubyte's phenomenal ", _react.default.createElement("a", {
+  }, "soundcloud!"), " ", _react.default.createElement("br", null), "Inspirado pela exposi\xE7\xE3o fenomenal do Docubyte, ", _react.default.createElement("a", {
     href: "https://www.docubyte.com/works/guide-to-computing/"
-  }, "Guide to Computing."), " Cheers!"))), _react.default.createElement("div", {
+  }, "Guide to Computing."), " ", _react.default.createElement("br", null), "Feliz Anivers\xE1rio!"))), _react.default.createElement("div", {
     ref: blur,
     className: "drone-wrapper"
   }, _react.default.createElement(_Drone.default, {
@@ -35992,7 +35998,7 @@ var Tooltip = function Tooltip() {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","gsap":"../node_modules/gsap/index.js","./Drone.js":"../src/Drone.js","./Clock.js":"../src/Clock.js","./Controller.js":"../src/Controller.js","./Hentai.js":"../src/Hentai.js","./css/App.css":"../src/css/App.css"}],"../src/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","gsap":"../node_modules/gsap/index.js","./Drone.js":"../src/Drone.js","./Clock.js":"../src/Clock.js","./Controller.js":"../src/Controller.js","./Hentai.js":"../src/Hentai.js","./img/bg.png":"../src/img/bg.png","./css/App.css":"../src/css/App.css"}],"../src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -36034,7 +36040,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50206" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57889" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
