@@ -178,6 +178,7 @@ a:hover {
 .background-img {
   position: absolute;
   max-width: 1400px;
+  overflow-x: hidden;
 }
 
 .main-menu-section {
